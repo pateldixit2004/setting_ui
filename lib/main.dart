@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:setting_ui/android_ui/view/setting_android.dart';
-import 'package:setting_ui/ios_ui/view/setting_ui.dart';
+import 'package:setting_ui/playstore_ui/playstore_android/view/playstore_ui.dart';
+import 'package:setting_ui/setting_ui/android_ui/view/setting_android.dart';
 void main()
 {
   runApp(
@@ -13,8 +13,10 @@ void main()
     // ),,
     MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: 'playstore android',
       routes: {
         '/':(context) => Setting_Android(),
+        'playstore android':(context) => Playstore_android(),
       },
     )
 
