@@ -280,6 +280,6 @@ class playstoreProvider extends ChangeNotifier
     'assets/image/img_15.png',
     'assets/image/img_16.png',
     'assets/image/img_17.png',
-    'assets/image/img_18.png',
+    'assets/image/img_14.png',
   ];
 }
