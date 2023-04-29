@@ -1,8 +1,8 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:setting_ui/playstore_ui/playstore_android/provider/playstore_provider.dart';
+import 'package:setting_ui/playstore_ui/playstore_android/view/top_charts_ui.dart';
 
 class Playstore_android extends StatefulWidget {
   const Playstore_android({Key? key}) : super(key: key);
@@ -65,12 +65,13 @@ class _Playstore_androidState extends State<Playstore_android> {
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
                             height: 100,
                             width: 100,
                             decoration: BoxDecoration(
@@ -80,14 +81,11 @@ class _Playstore_androidState extends State<Playstore_android> {
                             ),
 
                           ),
-                        ),
-                        // Image.asset("${providerF!.imageList[index]}"),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text("${providerF!.nameList[index]}",style: TextStyle(fontSize: 10),),
-                        ),
-                        Text("${providerF!.statList[index]}",style: TextStyle(fontSize: 10),),
-                      ],
+                          // Image.asset("${providerF!.imageList[index]}"),
+                          Text("${providerF!.nameList[index]}",style: TextStyle(fontSize: 10),),
+                          Text("${providerF!.statList[index]}",style: TextStyle(fontSize: 10),),
+                        ],
+                      ),
                     );
                   },
                   itemCount: providerF!.nameList.length,
@@ -101,11 +99,14 @@ class _Playstore_androidState extends State<Playstore_android> {
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
                             height: 100,
                             width: 100,
                             decoration: BoxDecoration(
@@ -115,10 +116,12 @@ class _Playstore_androidState extends State<Playstore_android> {
                             ),
 
                           ),
-                        ),
-                        // Image.asset("${providerF!.imageList[index]}"),
-                        Text("${providerF!.nameList1[index]}",style: TextStyle(fontSize: 10),),
-                      ],
+                          // Image.asset("${providerF!.imageList[index]}"),
+                          Text("${providerF!.nameList1[index]}",style: TextStyle(fontSize: 10),),
+                          Text("${providerF!.statList[index]}",style: TextStyle(fontSize: 10),),
+
+                        ],
+                      ),
                     );
                   },
                   itemCount: providerF!.nameList1.length,
@@ -132,11 +135,13 @@ class _Playstore_androidState extends State<Playstore_android> {
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Container(
                             height: 100,
                             width: 100,
                             decoration: BoxDecoration(
@@ -146,10 +151,11 @@ class _Playstore_androidState extends State<Playstore_android> {
                             ),
 
                           ),
-                        ),
-                        // Image.asset("${providerF!.imageList[index]}"),
-                        Text("${providerF!.nameList2[index]}",style: TextStyle(fontSize: 10),),
-                      ],
+                          // Image.asset("${providerF!.imageList[index]}"),
+                          Text("${providerF!.nameList2[index]}",style: TextStyle(fontSize: 10),),
+                          Text("${providerF!.statList[index]}",style: TextStyle(fontSize: 10),),
+                        ],
+                      ),
                     );
                   },
                   itemCount: providerF!.nameList2.length,
@@ -158,23 +164,16 @@ class _Playstore_androidState extends State<Playstore_android> {
               ),
             ],
           ),
+//bottom
 
+          // bottomNavigationBar: BottomNavigationBar(items: [
+          //   BottomNavigationBarItem(icon: Icon(Icons.add),label: 'hyy'),
+          //   BottomNavigationBarItem(icon: Icon(Icons.add),label: 'hyy'),
+          //   BottomNavigationBarItem(icon: Icon(Icons.add),label: 'hyy'),
+          // ]),
         ),
       ),
     );
   }
 
-  Widget listtile(String? data, String? no) {
-    return Column(
-      children: [
-        Container(
-          height: 100,
-          width: 100,
-          color: Colors.red,
-        ),
-        Text("$data"),
-        Text("$no"),
-      ],
-    );
-  }
 }
