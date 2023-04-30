@@ -183,5 +183,103 @@ class playstoreProvider extends ChangeNotifier
         ],
       ),
     ),
+    ListTile(
+      leading: Text("7"),
+      title: Row(
+        children: [
+          Container(
+            height: 30,
+            width:40,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/image/img_7.png"),fit: BoxFit.fill)
+            ),
+          ),
+          SizedBox(width: 10,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Telegram",style: TextStyle(fontSize: 15),),
+              Text("social media",style: TextStyle(fontSize:10),),
+              Text("4.2 *",style: TextStyle(fontSize: 10),),
+            ],
+          )
+        ],
+      ),
+    ),
+    ListTile(
+      leading: Text("8"),
+      title: Row(
+        children: [
+          Container(
+            height: 30,
+            width:40,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/image/img_8.png"),fit: BoxFit.fill)
+            ),
+          ),
+          SizedBox(width: 10,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Tiwwter",style: TextStyle(fontSize: 15),),
+              Text("social media",style: TextStyle(fontSize:10),),
+              Text("4.2 *",style: TextStyle(fontSize: 10),),
+            ],
+          )
+        ],
+      ),
+    ),
+    ListTile(
+      leading: Text("9"),
+      title: Row(
+        children: [
+          Container(
+            height: 30,
+            width:40,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/image/img_9.png"),fit: BoxFit.fill)
+            ),
+          ),
+          SizedBox(width: 10,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Messeger",style: TextStyle(fontSize: 15),),
+              Text("social media",style: TextStyle(fontSize:10),),
+              Text("4.2 *",style: TextStyle(fontSize: 10),),
+            ],
+          )
+        ],
+      ),
+    ),
+    ListTile(
+      leading: Text("10"),
+      title: Row(
+        children: [
+          Container(
+            height: 30,
+            width:40,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/image/img_10.png"),fit: BoxFit.fill)
+            ),
+          ),
+          SizedBox(width: 10,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Flipcard",style: TextStyle(fontSize: 15),),
+              Text("shopping",style: TextStyle(fontSize:10),),
+              Text("4.2 *",style: TextStyle(fontSize: 10),),
+            ],
+          )
+        ],
+      ),
+    ),
+  ];
+  List jiocinemaList=[
+    'assets/image/img_15.png',
+    'assets/image/img_16.png',
+    'assets/image/img_17.png',
+    'assets/image/img_18.png',
   ];
 }

@@ -66,17 +66,23 @@ class _TopscreenState extends State<Topscreen> {
                   },value: false,activeColor: Colors.white24,
                 ),
               ),
-              Expanded(
-                child: ListView.builder(itemBuilder: (context, index) {
-                  return Container(
+              Container(
+                height: 25,
+                child: Expanded(
+                  child: ListView.builder(itemBuilder: (context, index) {
+                    return Container(
+                      height: 18,
 
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.red
-                    ),
-                    child: Center(child: Text("${providerF!.itemnameList[index]}"),),
-                  );
-                },itemCount: providerF!.itemnameList.length,scrollDirection: Axis.horizontal,),
+                      alignment: Alignment.center,
+
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(7),
+                        color: Colors.white60
+                      ),
+                      child: SizedBox(width: 100,child: Center(child: Text("${providerF!.itemnameList[index]}",style: TextStyle(fontSize: 10),))),
+                    );
+                  },itemCount: providerF!.itemnameList.length,scrollDirection: Axis.horizontal,),
+                ),
               ),
 
               Expanded(
@@ -87,6 +93,24 @@ class _TopscreenState extends State<Topscreen> {
                 },itemCount: providerF!.tile.length,scrollDirection: Axis.vertical,),
               ),
 
+              // Container(
+              //   height: 25,
+              //   child: Expanded(
+              //     child: ListView(
+              //       children: [
+              //         // Text("Top free"),
+              //         // Text("Top free"),
+              //         // Text("Top free"),
+              //         data('Top free'),
+              //         data('Top grossing'),
+              //         data('Tranding'),
+              //
+              //       ],
+              //       scrollDirection: Axis.horizontal,
+              //     ),
+              //   ),
+              // ),
+
             ],
           ),
         ),
@@ -94,4 +118,16 @@ class _TopscreenState extends State<Topscreen> {
     );
   }
 
+  Widget data(String? name)
+  {
+    return Container(
+      height: 18,
+      width: 50,
+      child: Center(child: Text("$name",style: TextStyle(fontSize: 10),)),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(5),
+        color: Colors.red
+      ),
+    );
+  }
 }
