@@ -29,7 +29,7 @@ samples, guidance on mobile development, and a full API reference.
 <img src="https://github.com/userdixit/setting_ui/assets/120080979/554c0250-8040-48ec-ac08-76e2040f4e1f" alt="Girl in a jacket" width="400" height="600">
 
 
-<img src="https://github.com/userdixit/setting_ui/assets/120080979/264b74c6-85dc-4ac0-9035-0fc4b0898146" alt="Girl in a jacket" width="400" height="600">
+<img src="https://github.com/userdixit/setting_ui/assets/120080979/43548b13-3e56-4b44-b3ec-db74df462391" alt="Girl in a jacket" width="400" height="600">
 
 
 <img src="https://github.com/userdixit/setting_ui/assets/120080979/3318b8a6-5af7-482d-b4ae-c13796f88b74" alt="Girl in a jacket" width="400" height="600">
