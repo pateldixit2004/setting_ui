@@ -40,4 +40,4 @@ samples, guidance on mobile development, and a full API reference.
 
 <img src="https://github.com/userdixit/setting_ui/assets/120080979/335f1320-8d30-4090-b490-c4a89125a7cc" alt="Girl in a jacket" width="400" height="600">
 
-<img src="https://github.com/userdixit/setting_ui/assets/120080979/20b4b843-0bc5-4eb3-bc11-a7613d9d812f" width="400" height="600">
+<img src="https://github.com/userdixit/setting_ui/assets/120080979/8ef65f7e-b787-4e8a-a2c7-494e5977cfe5" width="400" height="600">
